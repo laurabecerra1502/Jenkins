@@ -6,7 +6,7 @@ pipeline {
             stage ('test') {
                 steps {
                   dir("build_java"){
-                        bat "mvn clean compile test"
+                        sh "mvn clean compile test"
                   }
                    
                    
