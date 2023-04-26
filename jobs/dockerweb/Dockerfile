@@ -1,6 +1,6 @@
 FROM php:7.1.17-apache
 LABEL maintainer="Jaivic"
-
+USER root
 RUN a2enmod rewrite
 
 RUN apt-get update && apt-get install -y \
